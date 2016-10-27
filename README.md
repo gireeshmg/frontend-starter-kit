@@ -1,12 +1,12 @@
 # Frontend Starter Kit
-Front end starter kit using gulp, es6, handlebars, semantic-ui, less
+Front end starter kit using gulp, es6, handlebars, semantic-ui, less, accessibility, assemble, mocha
 
 ## Prerequisites:
 
 * NodeJS
 * NPM
-* Gulp (npm install --global gulp-cli)
-* Bower (npm install -g bower)
+* Gulp
+* Bower
 
 ## Installation of Prerequisites
 ### NodeJS
@@ -33,7 +33,7 @@ This will install the bower globally.
 1. Unzip the file to a folder or clone this.
 2. Open terminal/cmd
 3. Run “npm install”
-This will download all the dependent node modules to a folder “noce_modules”
+This will download all the dependent node modules to a folder “node_modules”
 4. Once completed run “bower install”
 This command will download the dependent packages to a folder “bower_components”
 Once completed run “gulp dev” for development or “gulp” for deployment
@@ -48,7 +48,10 @@ This file contains semantic-ui related configurations like components, source an
 * bower.json
 This file has bower dependent file configurations  
 * gulpfile.js
-This is the entry file for the gulp. Main tasks sequence like default and 
+This is the entry file for the gulp. Main tasks sequence like default and
 dev are configured here.
 * /tasks/*.js
-All the gulp tasks are split into multiple files to de-clutter the gulpfile.js 
+All the gulp tasks are split into multiple files to de-clutter the gulpfile.js
+
+## License:
+This project is licensed under the MIT License
