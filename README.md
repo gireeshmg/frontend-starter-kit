@@ -30,7 +30,7 @@ npm install -g bower
 This will install the bower globally.
 
 ##Installation Steps:
-1. Unzip the file to a folder.
+1. Unzip the file to a folder or clone this.
 2. Open terminal/cmd
 3. Run “npm install”
 This will download all the dependent node modules to a folder “noce_modules”
