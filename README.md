@@ -28,3 +28,12 @@ Run the below command on cmd/terminal
 npm install -g bower
 ```
 This will install the bower globally.
+
+##Installation Steps:
+1. Unzip the file to a folder.
+2. Open terminal/cmd
+3. Run “npm install”
+This will download all the dependent node modules to a folder “noce_modules”
+4. Once completed run “bower install”
+This command will download the dependent packages to a folder “bower_components”
+Once completed run “gulp dev” for development or “gulp” for deployment
