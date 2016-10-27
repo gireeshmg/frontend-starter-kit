@@ -1,5 +1,5 @@
 # Frontend Starter Kit
-Front end starter kit using gulp, es6, handlebars, semantic-ui, less, accessibility, assemble, mocha
+Front end starter kit using gulp, ES6, handlebars, semantic-ui, less, assemble
 
 ## Prerequisites:
 
@@ -32,11 +32,28 @@ This will install the bower globally.
 ## Installation Steps:
 1. Unzip the file to a folder or clone this.
 2. Open terminal/cmd
-3. Run “npm install”
-This will download all the dependent node modules to a folder “node_modules”
-4. Once completed run “bower install”
-This command will download the dependent packages to a folder “bower_components”
-Once completed run “gulp dev” for development or “gulp” for deployment
+3. Run “npm install”. This will download all the dependent node modules to a folder “node_modules”.
+4. Once completed run “bower install”. This command will download the dependent packages to a folder “bower_components”.
+
+
+## Usage:
+### gulp task:
+Run the bellow command to generate files for build purpose.
+```
+gulp
+```
+
+### gulp dev task:
+Run the bellow command to generate files for development purpose.
+```
+gulp dev
+```
+##### This will handle:
+* Initial build tasks
+* Opens the index page on a default browser with the URL  http://localhost:3000/
+* Start a watch task and watch for any changes made to the template, styles, scripts & images
+
+**Compiled files will be created under the distribution folder "dist"**
 
 ## Configurations:
 * **package.json**
