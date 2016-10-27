@@ -39,18 +39,18 @@ This command will download the dependent packages to a folder “bower_component
 Once completed run “gulp dev” for development or “gulp” for deployment
 
 ## Configurations:
-* package.json
+* **package.json**
 This file has all the npm dependencies
-* gulp-config.json
+* **gulp-config.json**
 This file contains path configurations for the gulp
-* semantic.json
+* **semantic.json**
 This file contains semantic-ui related configurations like components, source and output paths
-* bower.json
+* **bower.json**
 This file has bower dependent file configurations  
-* gulpfile.js
+* **gulpfile.js**
 This is the entry file for the gulp. Main tasks sequence like default and
 dev are configured here.
-* /tasks/*.js
+* **/tasks/**
 All the gulp tasks are split into multiple files to de-clutter the gulpfile.js
 
 ## License:
