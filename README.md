@@ -29,7 +29,7 @@ npm install -g bower
 ```
 This will install the bower globally.
 
-##Installation Steps:
+## Installation Steps:
 1. Unzip the file to a folder or clone this.
 2. Open terminal/cmd
 3. Run “npm install”
@@ -37,3 +37,18 @@ This will download all the dependent node modules to a folder “noce_modules”
 4. Once completed run “bower install”
 This command will download the dependent packages to a folder “bower_components”
 Once completed run “gulp dev” for development or “gulp” for deployment
+
+## Configurations:
+* bpackage.json
+This file has all the npm dependencies
+* gulp-config.json
+This file contains path configurations for the gulp
+* semantic.json
+This file contains semantic-ui related configurations like components, source and output paths
+* bower.json
+This file has bower dependent file configurations  
+* gulpfile.js
+This is the entry file for the gulp. Main tasks sequence like default and 
+dev are configured here.
+* /tasks/*.js
+All the gulp tasks are split into multiple files to de-clutter the gulpfile.js 
