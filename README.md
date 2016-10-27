@@ -39,7 +39,7 @@ This command will download the dependent packages to a folder “bower_component
 Once completed run “gulp dev” for development or “gulp” for deployment
 
 ## Configurations:
-* bpackage.json
+* package.json
 This file has all the npm dependencies
 * gulp-config.json
 This file contains path configurations for the gulp
