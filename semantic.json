@@ -11,7 +11,7 @@
       "packaged": "../../dist/",
       "uncompressed": "../../dist/ui-components/",
       "compressed": "../../dist/ui-components/",
-      "themes": "dist/themes/"
+      "themes": "../../dist/themes/"
     },
     "clean": "dist/"
   },
