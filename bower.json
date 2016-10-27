@@ -1,0 +1,25 @@
+{
+  "name": "gaf",
+  "description": "",
+  "main": "bower.json",
+  "authors": [
+    "Gireesha Mairaje Gopalkrishna <ggopalkrishna@sapient.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tasks",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "picturefill": "^3.0.2"
+  }
+}
