@@ -9,20 +9,20 @@ Front end starter kit using gulp, es6, handlebars, semantic-ui, less
 * Bower (npm install -g bower)
 
 ## Installation of Prerequisites
-* NodeJS 
+### NodeJS 
 Download nodejs from https://nodejs.org/en/download/ and install 
 
-* NPM 
+### NPM 
 Included in nodejs package so no installation needed
 
-* Gulp 
+### Gulp 
 Run the below command on cmd/terminal
 ```
 npm install --global gulp-cli
 ```
 This will install the gulp client on globally.
 
-* Bower
+### Bower
 Run the below command on cmd/terminal
 ```
 npm install -g bower
