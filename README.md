@@ -70,5 +70,14 @@ dev are configured here.
 * **/tasks/**
 All the gulp tasks are split into multiple files to de-clutter the gulpfile.js
 
+## Resources:
+* [Gulp](http://gulpjs.com/)
+* [Bower](https://bower.io/)
+* [Assemble](http://google.com)
+* [Handlebars](http://handlebarsjs.com/)
+* [Semantic UI](http://semantic-ui.com/)
+
+
+
 ## License:
 This project is licensed under the MIT License
