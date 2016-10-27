@@ -2,6 +2,7 @@
 Front end starter kit using gulp, es6, handlebars, semantic-ui, less
 
 ## Prerequisites:
+
 * NodeJS
 * NPM
 * Gulp (npm install --global gulp-cli)
