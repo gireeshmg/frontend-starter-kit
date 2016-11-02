@@ -1,6 +1,6 @@
 module.exports = function (gulp, plugins, config) {
     return function () {
-        return gulp.src(['src/**/*.js', '!src/semantic/**/*.js'])
+        return gulp.src(['src/**/*.js', '!src/semantic/**/*.js', '!src/**/*.spec.js'])
             .pipe(plugins.jshint())
             .pipe(plugins.jshint.reporter('default'))
             .pipe(plugins.sourcemaps.init({loadMaps: true}))
