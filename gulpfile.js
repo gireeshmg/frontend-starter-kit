@@ -45,20 +45,19 @@ gulp.task('accessibility', getTask('accessibility'));
 gulp.task('assembleLoad', getTask('assembleLoad'));
 gulp.task('assemble', getTask('assemble'));
 
-
-gulp.task('watchUI', semanticWatch);
-gulp.task('buildUI', semanticBuild);
+// gulp.task('watchUI', semanticWatch);
+// gulp.task('buildUI', semanticBuild);
 
 gulp.task('dev', function(callback) {
     runSequence(
-        'clean', ['vendorjs', 'vendorcss', 'scripts', 'assemble', 'fonts', 'imagemin', 'less', 'buildUI'],
-        'copy', ['watch', 'watchUI']
+        'clean', ['vendorjs', 'vendorcss', 'scripts', 'assemble', 'fonts', 'imagemin', 'less'],
+        'copy', ['watch']
     );
 });
 
 gulp.task('default', function(callback) {
     runSequence(
-        'clean', ['vendorjs', 'vendorcss', 'scripts', 'assemble', 'fonts', 'imagemin', 'less', 'buildUI'],
+        'clean', ['vendorjs', 'vendorcss', 'scripts', 'assemble', 'fonts', 'imagemin', 'less'],
         'copy'
     );
 });

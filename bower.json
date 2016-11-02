@@ -1,5 +1,5 @@
 {
-  "name": "gaf",
+  "name": "GAF",
   "description": "",
   "main": "bower.json",
   "authors": [
@@ -17,9 +17,12 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "slick-carousel": "^1.6.0",
+    "semantic": "semantic-ui#^2.2.6"
   },
   "devDependencies": {
-    "picturefill": "^3.0.2"
+    "picturefill": "^3.0.2",
+    "handlebars": "^4.0.5"
   }
 }
