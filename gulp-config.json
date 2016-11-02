@@ -8,8 +8,8 @@
         "fonts": "fonts/",
         "reports": "reports/",
         "vendorcss": [
-            "bower_components/semantic/dist/semantic.css"
-            "bower_components/slick-carousel/slick/slick.css",
+            "bower_components/semantic/dist/semantic.css",
+            "bower_components/slick-carousel/slick/slick.css"
         ],
         "vendorjs": [
             "bower_components/jquery/dist/jquery.js",
