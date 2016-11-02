@@ -1,22 +1,26 @@
 {
-	"paths": {
+    "paths": {
         "src": "src/",
-     	"dist": "dist/",
-     	"images": "images/",
-     	"scripts": "scripts/",
-     	"styles": "styles/",
-     	"fonts": "fonts/",
-     	"reports": "reports/",
+        "dist": "dist/",
+        "images": "images/",
+        "scripts": "scripts/",
+        "styles": "styles/",
+        "fonts": "fonts/",
+        "reports": "reports/",
         "vendorcss": [
-			"bower_components/slick-carousel/slick/slick.css",
-			"bower_components/semantic/dist/semantic.css"
-		],
-	    "vendorjs": [
-		    "bower_components/jquery/dist/jquery.js",
-			"bower_components/handlebars/handlebars.js",
-		    "bower_components/picturefill/dist/picturefill.js",
-		    "bower_components/slick-carousel/slick/slick.js",
-			"bower_components/semantic/dist/semantic.js"
-        ]
+            "bower_components/semantic/dist/semantic.css"
+            "bower_components/slick-carousel/slick/slick.css",
+        ],
+        "vendorjs": [
+            "bower_components/jquery/dist/jquery.js",
+            "bower_components/handlebars/handlebars.js",
+            "bower_components/picturefill/dist/picturefill.js",
+            "bower_components/slick-carousel/slick/slick.js",
+            "bower_components/semantic/dist/semantic.js"
+        ],
+        "vendorAssets": [{
+            "from": "bower_components/semantic/dist/themes/**/*.*",
+            "to": "styles/themes/"
+        }]
     }
 }

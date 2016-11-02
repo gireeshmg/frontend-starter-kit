@@ -44,6 +44,7 @@ gulp.task('connect', getTask('connect'));
 gulp.task('accessibility', getTask('accessibility'));
 gulp.task('assembleLoad', getTask('assembleLoad'));
 gulp.task('assemble', getTask('assemble'));
+gulp.task('vendorAssets', getTask('vendorAssets'));
 
 // gulp.task('watchUI', semanticWatch);
 // gulp.task('buildUI', semanticBuild);
@@ -51,13 +52,13 @@ gulp.task('assemble', getTask('assemble'));
 gulp.task('dev', function(callback) {
     runSequence(
         'clean', ['vendorjs', 'vendorcss', 'scripts', 'assemble', 'fonts', 'imagemin', 'less'],
-        'copy', ['watch']
+        'copy', 'vendorAssets', ['watch']
     );
 });
 
 gulp.task('default', function(callback) {
     runSequence(
         'clean', ['vendorjs', 'vendorcss', 'scripts', 'assemble', 'fonts', 'imagemin', 'less'],
-        'copy'
+        'copy', 'vendorAssets'
     );
 });
