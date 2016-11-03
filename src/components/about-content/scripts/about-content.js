@@ -4,7 +4,7 @@ $(document).ready(function(){
     $.get("http://www.json-generator.com/api/json/get/bPqKNtzqxu?indent=2", function( data ) {
         if(data && data.filterList){
             var locations = filterMapLocation(data.filterList,"distributor");
-            renderMap($(".about-map-container"),locations,{});
+            map.renderMap($(".about-map-container"),locations,{});
         }
     });
 
