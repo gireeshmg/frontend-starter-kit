@@ -1,5 +1,14 @@
  /*jshint esversion: 6 */
- 
+ /*
+ * google-map.js
+ * This file contains code to display google map 
+ *
+ * @project:    GAF
+ * @date:       2016-11-03
+ * @author:     SAPIENTNITRO
+ * @licensor:   SAPIENTNITRO
+ *
+ */
  
 let locationData =   {
     filterList:[{
@@ -21,7 +30,7 @@ let locationData =   {
  * filter map locations w.r.t. filter type
  * @param {object} mapData
  * @param {string} filterType
- * @returns filtered location array
+ * @returns{object} filtered location array
  */
 function filterMapLocation(mapData,filterType){ 
     let locationData = [];
@@ -47,7 +56,7 @@ function renderMap(locations =[],config = {}){
         zoom:  config.zoom || 10,
         center: new google.maps.LatLng(config.centerLat || 12.97, config.centerLng || 77.59),
         mapTypeId : google.maps.MapTypeId[mapType]
-    } 
+    }; 
 
     let map = new google.maps.Map(document.getElementById('map'), mapConfig),
      infowindow = new google.maps.InfoWindow(),
@@ -59,21 +68,21 @@ function renderMap(locations =[],config = {}){
             map: map
         });
 
-        google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
+     /**    google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
             return function() {
                 if(locations[i][0] != infowindow.getContent()){
                     infowindow.setContent(locations[i][0]);
                     infowindow.open(map, marker);
                 }
-            }
+            };
         })(marker, i));
 
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
                 map.setZoom(14);
                 map.setCenter(marker.getPosition());          
-            }
-        })(marker, i));
+            };
+        })(marker, i));*/
     }
 }
 
