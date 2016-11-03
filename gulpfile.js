@@ -7,8 +7,6 @@ var gulp = require("gulp"),
     semanticBuild = require('./src/semantic/tasks/build'),
     pkg = require('./package.json'),
     config = require('./gulp-config.json');
-var assemble = require('assemble');
-var path = require('path');
 
 var comment = '/*\n' +
     ' * <%= pkg.name %> <%= pkg.version %>\n' +
@@ -18,7 +16,7 @@ var comment = '/*\n' +
     '*/\n\n';
 
 plugins.browserSync = require('browser-sync').create();
-plugins.assembleApp = assemble();
+
 config.pkg = pkg;
 config.comment = comment;
 
