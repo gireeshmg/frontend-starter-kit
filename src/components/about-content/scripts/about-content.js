@@ -1,10 +1,11 @@
 /*jshint esversion: 6 */
 
 $(document).ready(function(){
-    $.get("http://www.json-generator.com/api/json/get/bPqKNtzqxu?indent=2", function( data ) {
+    $.get("http://www.json-generator.com/api/json/get/cbeCFXZyWa?indent=2", function( data ) {
         if(data && data.filterList){
             var locations = filterMapLocation(data.filterList,"distributor");
-            map.renderMap($(".about-map-container"),locations,{});
+            MAP.renderMap($(".about-map-container"),locations,{});
+            renderSearchResultForMap(data);
         }
     });
 

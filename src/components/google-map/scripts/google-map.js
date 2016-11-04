@@ -10,7 +10,8 @@
  *
  */
 
-let map = (function(){
+let MAP = (function(){
+
     /**
      * renders the google map
      * @param {object} locations - list of locations
