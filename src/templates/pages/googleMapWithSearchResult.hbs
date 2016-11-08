@@ -4,4 +4,60 @@ title: Google Map page
 description: This is the meta description
 name: GoogleMapWithSearchResult
 ---
-{{>render-map-with-result}}
+<div class="gaf-map-container"
+    data-href="http://www.json-generator.com/api/json/get/cbeCFXZyWa?indent=2"
+    data-map-type="ROADMAP"
+    data-center-lat= "12.97"
+    data-center-lng="77.59"
+    data-map-zoom="10">
+    <div class="map"  style="width:500px;height:500px;"></div>
+    <div class="search-result">
+        <script id="search-map-result" type="text/x-handlebars-template">
+            <div class="ui grid">  
+                \{{#each filterList}}
+                    <div class="row">
+                        <div class="four wide column">
+                            <div class="column">
+                                <div class="ui">
+                                    <picture>
+                                        <source srcset="images/GettyImages-535279316.jpg" media="(min-width: 1024px)" />
+                                        <source srcset="images/186662234.jpg" media="(min-width: 768px)" />
+                                        <img class="ui fluid image" srcset="images/483770407.jpg" alt="Sample pic" />
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="five wide column">
+                            <div class="column">
+                                <div class="row title">\{{title}}</div>
+                                <div class="row description">\{{description}}</div>
+                                <div class="row ui rating" data-rating="4"></div>
+                            </div>
+                        </div>
+                        <div class="seven wide column middle aligned">
+                            <div class="column">
+                                <div class="row ui small-img">
+                                    <picture>
+                                        <source srcset="images/right-arrow.png" media="(min-width: 1024px)" />
+                                        <source srcset="images/right-arrow.png" media="(min-width: 768px)" />
+                                        <img class="ui fluid" srcset="images/right-arrow.png" alt="right arrow" />
+                                    </picture>
+                                </div>
+                                <div class="row distance">2.1 mi</div>
+                            </div>
+                        </div>
+                    </div>
+                \{{/each}}
+            </div>
+        </script>
+    </div>
+</div>
+
+<div class="gaf-map-container"  style="width:500px;height:500px;"
+    data-href="http://www.json-generator.com/api/json/get/cbeCFXZyWa?indent=2"
+    data-map-type="HYBRID"
+    data-center-lat= "12.97"
+    data-center-lng="77.59"
+    data-map-zoom="10">
+    <div class="map" style="width:500px;height:500px;"></div>
+</div>
