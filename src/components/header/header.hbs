@@ -1,12 +1,11 @@
 <header>
-    <div class="ui large top fixed hidden menu">
+    <div class="ui large top hidden menu">
         <div class="ui container">
-            <a class="active item">Home</a>
-            <a class="item">Work</a>
-            <a class="item" href="about.html">About Content</a>
-            <a class="item" href="googleMapWithSearchResult.html">Map</a>
-            <a class="item">Company</a>
-            <a class="item">Careers</a>
+            <a class="item {{#is activeMenu 'home'}} active{{/is}}" href="index.html">Home</a>
+            <a class="item {{#is activeMenu 'about'}} active{{/is}}" href="about.html">About Content</a>
+            <a class="item {{#is activeMenu ''}} active{{/is}}"  href="googleMapWithSearchResult.html">Map</a>
+            <a class="item {{#is activeMenu 'search'}} active{{/is}}" href="search.html">Search </a>
+            <a class="item {{#is activeMenu 'careers'}} active{{/is}}" href="careers.html">Careers</a>
             <div class="right menu">
                 <div class="item">
                     <a class="ui button">Log in</a>
