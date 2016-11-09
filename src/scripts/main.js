@@ -39,6 +39,12 @@ GAF.Main = (function(window, $, namespace) {
             transition: 'fade in',
             duration: 1000
         });
+
+        //sticky menu visibility
+        $('.tabs .item').tab('change tab','home');
+        
+        
+
     };
 
     init = () => {
