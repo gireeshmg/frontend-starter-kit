@@ -1,6 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 var assemble = require('assemble')();
+var helpers = require('handlebars-helpers')();
 
 module.exports = function(gulp, plugins, config) {
     return function() {
@@ -11,6 +12,7 @@ module.exports = function(gulp, plugins, config) {
         ]);
         assemble.pages(path.resolve(config.paths.src, 'templates/pages/*.hbs'));
         assemble.data(path.resolve(config.paths.src, '**/*.json'));
+        assemble.helpers(helpers);
 
         return assemble.toStream('pages')
             .pipe(assemble.renderFile())

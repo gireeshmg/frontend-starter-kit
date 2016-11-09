@@ -3,8 +3,8 @@
 var gulp = require("gulp"),
     plugins = require('gulp-load-plugins')(),
     runSequence = require('run-sequence'),
-    semanticWatch = require('./src/semantic/tasks/watch'),
-    semanticBuild = require('./src/semantic/tasks/build'),
+    //semanticWatch = require('./src/semantic/tasks/watch'),
+    //semanticBuild = require('./src/semantic/tasks/build'),
     pkg = require('./package.json'),
     config = require('./gulp-config.json');
 
