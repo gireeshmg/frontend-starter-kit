@@ -1,0 +1,14 @@
+.breadcrums{
+    .breadcrums-item{
+        text-transform: uppercase;
+        color:grey;
+        font-size: 0.9em;
+    }
+    .breadcrums-item:not(:last-child){
+        text-decoration: underline;
+    }
+    a.breadcrums-item:not(:last-child)::after{
+        content:">";
+        padding-left: 1px;
+    }
+}
