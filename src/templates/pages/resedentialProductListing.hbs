@@ -4,19 +4,24 @@ title: Resedential Product Listing Page
 tags: ResedentialPLP
 ---
 <section class="rplp">
-    <section class="rplp-header">
-        {{>header}}
+    <section class="header">
+        header
     </section>
-    <section class="rplp-catergory-hero">
+    <section class="catergory-hero">
+        category Hero
         {{>rplp-catergory-hero}}
     </section>
-    <section class="rplp-left-panel">
-        {{>rplp-left-panel}}
-    </section>
-    <section class="rplp-right-panel">
-        {{>rplp-right-panel}}
+    <section class="content-container">
+        <section class="left-panel">
+            Left Panel
+            {{>rplp-left-panel}}
+        </section>
+        <section class="right-panel">
+            Right Panel
+            {{>rplp-right-panel}}
+        </section>
     </section>
     <section class="footer">
-        {{>footer}}
+        Footer     
     </section>
 </section>
