@@ -1,14 +1,18 @@
-.breadcrumbs{
-    .breadcrumbs-item{
-        text-transform: uppercase;
-        color:grey;
+.breadcrumbs {
+    .breadcrumbs-item {
+        color: grey;
         font-size: 0.9em;
+        text-transform: uppercase;
     }
-    .breadcrumbs-item:not(:last-child){
+    .breadcrumbs-item:not(:last-child) {
         text-decoration: underline;
     }
-    a.breadcrumbs-item:not(:last-child)::after{
-        content:">";
+    .breadcrumbs-item:last-child {
+        cursor: default;
+        pointer-events: none;
+    }
+    a.breadcrumbs-item:not(:last-child)::after {
+        content: '>';
         padding-left: 1px;
     }
 }
