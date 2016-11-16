@@ -1,0 +1,38 @@
+.in-page-tab-container{
+    .category-names{
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        right: 20px;
+        margin: auto;
+        width: 500px;
+        .category-representation{
+            background: grey;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            opacity: 0.5;
+        }
+        .column.active{
+            .category-representation,.category{
+                opacity: 1;
+                cursor: default;
+            }
+        }
+        a.category{
+            text-transform: uppercase;
+            color: grey;
+            font-size: 0.7em;
+            cursor: pointer;
+            opacity: 0.5;
+        }
+    }
+    .intractive-category-names{
+        position: absolute;
+        top: 120px;
+        left: 20px;
+        right: 20px;
+        margin: auto;
+    }
+}
