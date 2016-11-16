@@ -15,12 +15,10 @@ $(document).ready(function(){
     });
 
     $('.slider-category-names').slick({
-        centerMode: true,
-        centerPadding: '60px',
         dots: false,
         infinite: true,
         speed: 300,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
     });
 });
