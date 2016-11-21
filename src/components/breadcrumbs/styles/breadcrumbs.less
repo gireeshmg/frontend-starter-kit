@@ -1,22 +1,22 @@
 .breadcrumbs-container {
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: 42px;
+    left: 48px;
     z-index: 1;
     .breadcrumbs-item {
         color: grey;
         font-size: 0.9em;
-        text-transform: uppercase;
-    }
-    .breadcrumbs-item:not(:last-child) {
-        text-decoration: underline;
+        text-transform: capitalize;
+        padding-right: 20px;
+        padding-left: 8px;
     }
     .breadcrumbs-item:last-child {
         cursor: default;
         pointer-events: none;
     }
-    a.breadcrumbs-item:not(:last-child)::after {
-        content: '>';
-        padding-left: 1px;
+    .breadcrumb-icon{
+        width:16px;
+        height:16px;
+        background: url('../images/sprite.png') 0px -1px;
     }
 }
